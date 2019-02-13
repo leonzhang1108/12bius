@@ -1,0 +1,38 @@
+{
+  "name": "12bius",
+  "author": "LI.YIYI",
+  "description": "春节十二响",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonzhang1108/12bius.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonzhang1108/12bius/issues"
+  },
+  "homepage": "https://github.com/leonzhang1108/12bius#readme",
+  "private": true,
+  "dependencies": {
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "react-scripts-ts": "3.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.3",
+    "@types/jest-diff": "^20.0.0",
+    "@types/node": "^11.9.3",
+    "@types/react": "^16.8.2",
+    "@types/react-dom": "^16.8.0",
+    "typescript": "^3.3.3"
+  },
+  "homepage": "."
+}
