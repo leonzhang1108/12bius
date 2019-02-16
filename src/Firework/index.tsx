@@ -62,14 +62,10 @@ const generateFireworks = (
   height: number,
   maxFireworks: number,
   maxSparks: number,
-) => {
-  return times(maxFireworks, (i: number) => {
-    return {
-      ...initFirework(width, height),
-      sparks: generateSparks(maxSparks),
-    }
-  })
-}
+) => times(maxFireworks, () => ({
+  ...initFirework(width, height),
+  sparks: generateSparks(maxSparks),
+}))
 
 const toRGBA = (r = 0, g = 0, b = 0, a = 1) => `rgba(${[r, g, b, a].join(",")})`
 
@@ -113,7 +109,7 @@ const update = (width: number, height: number, firework: IFirework) => {
 }
 
 const Fireworks = ({ background, width = 0, height = 0, maxFireworks = 0, maxSparks = 0 }: IProps) => {
-  const canvas = React.useRef(null)
+  const canvas: any = React.useRef(null)
   const [fireworks, updator] = React.useState(
     generateFireworks(width, height, maxFireworks, maxSparks),
   )
